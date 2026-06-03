@@ -310,7 +310,7 @@
       <p class="eyebrow">Nestlog</p>
       <h1>Privacy Policy</h1>
       <p class="subtitle">Nestlog is a baby-tracking app that runs entirely on your devices. Your data stays with you, and we never receive it. No accounts. No servers. No analytics. No tracking.</p>
-      <p class="meta">Last updated: 1 June 2026</p>
+      <p class="meta">Last updated: 3 June 2026</p>
     </div>
   </div>
 </header>
@@ -327,7 +327,7 @@
     <p><strong>None.</strong> Nestlog has no user accounts and no servers. We do not collect, transmit, store, or have any access to the information you enter. We use no analytics, no advertising, and no third-party tracking.</p>
 
     <h2 id="storage">Where your data lives</h2>
-    <p>All information you enter, including your baby's profile, feeds, sleep, diapers, pumping, growth measurements and notes, is stored only in the app's local database on your device.</p>
+    <p>All information you enter, including your baby's profile, feeds, sleep, diapers, pumping, growth measurements, milk and formula stash, and notes, is stored only in the app's local database on your device. If you add a baby photo, you choose it from your device's photo gallery using the system photo picker, and it is kept only on your device.</p>
 
     <h2 id="sync">Device-to-device sync <span class="chip">optional</span></h2>
     <p>If you choose to sync, Nestlog connects directly to your own other devices running Nestlog over your local network (for example, your home wifi). This transfer is encrypted and happens only between devices you have paired. The data is never sent to us or to any third party, and no server is involved at any point.</p>
@@ -335,8 +335,38 @@
     <h2 id="backups">Backups <span class="chip">optional</span></h2>
     <p>You can create a backup file that is encrypted with a password you choose. The file is saved wherever you decide using your device's file picker. We never see it and cannot recover it if you lose the password.</p>
 
+    <h2 id="purchases">Purchases <span class="chip">optional</span></h2>
+    <p>Nestlog Pro is an optional one-time purchase. The transaction is handled entirely by Google Play, which is also the only party that sees your payment details. Nestlog receives only a confirmation of whether you own Pro and stores that on your device so your features stay unlocked. We do not collect or process any payment information. Google's handling of the purchase is covered by Google's own privacy policy.</p>
+
     <h2 id="permissions">Permissions</h2>
-    <p>Nestlog requests network access only to perform direct device-to-device sync over your local network. It is never used to contact us or any external service. Optional permissions (such as notifications, camera for a baby photo, or biometrics for app lock) are used only for the stated feature and only on your device.</p>
+    <p>Nestlog asks only for what a specific feature needs, and every permission is used solely on your device. None of them are used to contact us or any external service.</p>
+    <table class="perm-table">
+      <thead>
+        <tr><th>Permission</th><th>Why it is used</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Network and Wi-Fi (INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, CHANGE_WIFI_MULTICAST_STATE)</td>
+          <td>Direct device-to-device sync over your local network only. It is never used to reach us or any external server.</td>
+        </tr>
+        <tr>
+          <td>Camera</td>
+          <td>Only to scan a pairing QR code when you set up sync. No photos are taken or stored, and the camera is never used at any other time.</td>
+        </tr>
+        <tr>
+          <td>Notifications (POST_NOTIFICATIONS)</td>
+          <td>To show local reminders you turn on (such as feeds or milk near its use-by time) and the ongoing notification for a running timer. There are no push notifications.</td>
+        </tr>
+        <tr>
+          <td>Foreground service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_SPECIAL_USE)</td>
+          <td>To keep a running feeding or sleep timer accurate while the app is in the background.</td>
+        </tr>
+        <tr>
+          <td>Biometric or device unlock</td>
+          <td>Optional app lock. Your biometric data is handled entirely by the Android system; Nestlog never sees or stores it.</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2 id="children">Children's data</h2>
     <p>Nestlog is intended for use by parents and caregivers. Information about your child is stored only on your device and is never collected by us or shared with anyone.</p>
