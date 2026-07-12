@@ -302,7 +302,7 @@
       <p class="eyebrow">Nestlog</p>
       <h1>Privacy Policy</h1>
       <p class="subtitle">Nestlog is a baby-tracking app that runs entirely on your devices. Your data stays with you, and we never receive it. No accounts. No servers. No analytics. No tracking.</p>
-      <p class="meta">Last updated: 3 June 2026</p>
+      <p class="meta">Last updated: 12 July 2026</p>
     </div>
   </div>
 </header>
@@ -323,6 +323,9 @@
 
     <h2 id="sync">Device-to-device sync <span class="chip">optional</span></h2>
     <p>If you choose to sync, Nestlog connects directly to your own other devices running Nestlog over your local network (for example, your home wifi). This transfer is encrypted and happens only between devices you have paired. The data is never sent to us or to any third party, and no server is involved at any point.</p>
+
+    <h2 id="watch">Watch app (Wear OS) <span class="chip">optional</span></h2>
+    <p>If you install the Nestlog watch app, your running feed timer and your babies' names and photos (reduced in size for the watch) sync between your phone and your own paired watch through Google Play services' Wearable Data Layer. This transfer is end-to-end encrypted and happens only between your own two devices. When Bluetooth is unavailable it may be relayed through Google's servers in encrypted form; Google's handling of that transport is covered by Google's own privacy policy. Nothing is sent to us or to any third party, and timer data is removed from the sync channel the moment a session ends.</p>
 
     <h2 id="backups">Backups <span class="chip">optional</span></h2>
     <p>You can create a backup file that is encrypted with a password you choose. The file is saved wherever you decide using your device's file picker. We never see it and cannot recover it if you lose the password.</p>
@@ -352,6 +355,10 @@
         <tr>
           <td>Foreground service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_SPECIAL_USE)</td>
           <td>To keep a running feeding or sleep timer accurate while the app is in the background.</td>
+        </tr>
+        <tr>
+          <td>Display over other apps (SYSTEM_ALERT_WINDOW)</td>
+          <td>The optional floating timer bubble, off by default. If you enable it in Settings, quick timer controls are drawn over other apps while a feed timer is running. Nestlog only draws on the screen; it reads nothing from other apps.</td>
         </tr>
         <tr>
           <td>Biometric or device unlock</td>
