@@ -95,7 +95,7 @@
       pointer-events: none;
     }
     .hero-inner {
-      max-width: 760px;
+      max-width: 840px;
       margin: 0 auto;
       display: flex;
       gap: 24px;
@@ -150,7 +150,7 @@
 
     /* Container */
     .container {
-      max-width: 760px;
+      max-width: 840px;
       margin: -36px auto 64px;
       padding: 0 24px;
       position: relative;
@@ -216,6 +216,7 @@
 
     .perm-table {
       width: 100%;
+      table-layout: fixed;
       border-collapse: separate;
       border-spacing: 0;
       margin: 12px 0 0;
@@ -242,7 +243,7 @@
     .perm-table td:first-child {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 0.88rem;
-      white-space: nowrap;
+      overflow-wrap: anywhere;
       color: var(--chip-ink);
       width: 38%;
     }
@@ -270,7 +271,7 @@
     .contact a { font-weight: 600; }
 
     footer {
-      max-width: 760px;
+      max-width: 840px;
       margin: 0 auto;
       padding: 28px 24px 56px;
       text-align: center;
